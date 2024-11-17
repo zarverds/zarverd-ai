@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>ZarverdAI | Site</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h3 class="navbar__logo">ZarverdAI</h3>
+        <button class="navbar__button" id="themeToggler"><i class='bx bx-sun'></i></button>
+    </nav>
+
+    <header class="header">
+        <div class="header__title">
+            <h1>Приветствую !</h1>
+            <h2>Чем могу помочь сегодня ?</h2>
+        </div>
+        <div class="suggests">
+            <div class="suggests__item">
+                <p class="suggests__item-text">
+                    Привет, как дела ?
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bx-stopwatch'></i>
+                </div>
+            </div>
+            <div class="suggests__item">
+                <p class="suggests__item-text">
+                    Помоги мне написать доклад
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bx-edit-alt'></i>
+                </div>
+            </div>
+            <div class="suggests__item">
+                <p class="suggests__item-text">
+                    Напиши мне реферат
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bx-compass'></i>
+                </div>
+            </div>
+            <div class="suggests__item">
+                <p class="suggests__item-text">
+                    Что делать мне сегодня ?
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bx-wrench'></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="chats"></section>
+
+    <section class="prompt">
+        <form action="#" class="prompt__form" novalidate>
+            <div class="prompt__input-wrapper">
+                <input type="text" placeholder="Введите ваш запрос" class="prompt__form-input" required>
+                <button class="prompt__form-button" id="sendButton">
+                    <i class='bx bx-send'></i>
+                </button>
+                <button class="prompt__form-button" id="deleteButton">
+                    <i class='bx bx-trash'></i>
+                </button>
+            </div>
+        </form>
+        <p class="prompt__disclaim">
+            ZarverdAI ваш лучший помощник во всём !
+        </p>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
